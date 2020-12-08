@@ -1,0 +1,202 @@
+@import "fonts.css";
+
+:root{
+  --primary: #f25d28;
+  --secondary: #fc7315;
+  --text: #21333a;
+  --text-secondary: #435761;
+  --hover: #f25d28;
+  font-size: 16px;
+}
+
+h1,p.h1{
+  font-family: "Avenir";
+  color: var(--text);
+}
+h3,p.h3{
+  font-family:"Avenir";
+  color: var(--text);
+}
+a,span,p,div,input,button,textarea{
+  font-family:"Avenir";
+  color: var(--text-secondary);
+}
+
+.container {
+  width: 90%;
+}
+
+.btn.btn-primary {
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 0;
+  padding: 10px 100px;
+  color: #fff;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:visited{
+  background-color: var(--hover)!important;
+  border-color: var(--hover)!important;
+  box-shadow: none!important;
+}
+
+/*----------------------------Header-------------------------------*/
+
+header {
+  background: #fff;
+  border-bottom: solid 4px var(--primary);
+}
+
+header img.logo {
+  width: 180px;
+  margin: 5px 0;
+}
+
+header nav.navbar a.nav-link {
+  font-size: 1.7rem;
+  color: var(--text-secondary)!important;
+}
+
+header nav.navbar a.nav-link:hover {
+  color: var(--hover)!important;
+}
+
+header nav.navbar a.nav-link.signUp {
+  font-weight: 700;
+  margin-left: 3vw;
+}
+
+/*----------------------------banner-------------------------------*/
+
+#banner .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#banner .itemCarousel1 .textCarousel {
+  position: absolute;
+  left: 40vw;
+}
+
+#banner .textCarousel .launch p {
+  color: #fff;
+  margin: 0;
+  font-size: 2.2vw;
+  font-weight: 200;
+  letter-spacing: 4px;
+  margin-left: 1.4vw;
+}
+
+#banner .textCarousel .launch span {
+  background: var(--primary);
+  padding: 0 10px;
+  font-weight: 700;
+  font-size: 2.6vw;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+#banner .textCarousel p.text2 {
+  color: #fff;
+  font-size: 3.8vw;
+  font-weight: 900;
+  line-height: 4.5vw;
+  padding: 3vw 0 0.6vw;
+  margin: 0;
+}
+
+#banner .itemCarousel1 .textCarousel p:last-child {
+  color: var(--primary);
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+#banner .itemCarousel2 .textCarousel {
+  position: absolute;
+  right: 37vw;
+}
+
+#banner .itemCarousel3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .itemCarousel3 .textCarousel {
+  position: absolute;
+  z-index: 2;
+}
+
+#banner .itemCarousel3 .textCarousel p {
+  font-size: 4vw;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+}
+
+#banner .itemCarousel3 .textCarousel p span {
+  font-size: 6vw;
+  color: #fff;
+}
+
+#banner .itemCarousel3 .textCarousel p:last-child {
+  color: var(--primary);
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0.5vw;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 2vw;
+  height: 2vw;
+  max-width: 15px;
+  max-height: 15px;
+  margin: 5px 1vw;
+  background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot:focus{
+  outline: none;
+}
+
+/*----------------------------Queries-------------------------------*/
+
+@media (max-width: 1199.98px) { ... }
+
+
+@media (max-width: 991.98px) {
+  header img.logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header img.logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header img.logo {
+    width: 100px;
+  }
+  header nav.navbar a.nav-link.signUp {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
+}
