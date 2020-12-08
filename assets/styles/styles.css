@@ -6,6 +6,8 @@
   --text: #21333a;
   --text-secondary: #435761;
   --hover: #f25d28;
+  --btn: #21a2a8;
+  --btn-hover: #19767b;
   font-size: 16px;
 }
 
@@ -22,22 +24,24 @@ a,span,p,div,input,button,textarea{
   color: var(--text-secondary);
 }
 
-.container {
-  width: 90%;
+img {
+  max-width: 100%;
 }
 
 .btn.btn-primary {
-  font-size: 1.5rem;
-  background-color: var(--primary);
-  border-color: var(--primary);
-  border-radius: 0;
-  padding: 10px 100px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: var(--btn);
+  border-color: var(--btn);
+  border-radius: 10px;
+  padding: 5px 40px;
   color: #fff;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus, .btn.btn-primary:visited{
-  background-color: var(--hover)!important;
-  border-color: var(--hover)!important;
+  background-color: var(--btn-hover)!important;
+  border-color: var(--btn-hover)!important;
   box-shadow: none!important;
 }
 
@@ -46,6 +50,10 @@ a,span,p,div,input,button,textarea{
 header {
   background: #fff;
   border-bottom: solid 4px var(--primary);
+}
+
+header .container {
+  max-width: 1600px;
 }
 
 header img.logo {
@@ -170,6 +178,103 @@ header nav.navbar a.nav-link.signUp {
   outline: none;
 }
 
+/*------------------------------Form--------------------------------*/
+
+#signUp form{
+  max-width: 1000px;
+  margin: 45px auto;
+}
+
+#signUp form .title p {
+  text-align: center;
+  margin: 2vh 0 4vh;
+  font-size: 3rem;
+}
+
+#signUp form .title p span {
+  font-weight: 700;
+  color: var(--text);
+}
+
+#signUp input.form-control{
+  padding-left: 45px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+#signUp img.iconInput{
+  position: absolute;
+  max-height: 23px;
+  height: auto;
+  transform: translate(12px, 23px);
+  max-width: 26px;
+  width: auto;
+}
+
+#signUp img.iconInput.mail{
+  transform: translate(13px, 26px);
+}
+
+#signUp .invalid-feedback{
+  transform: translateY(-8px);
+  margin: 0;
+}
+
+/*----------------------------Phone-------------------------------*/
+
+
+#phone {
+  background-color: var(--primary);
+  padding: 10vh 0;
+  position: relative;
+}
+
+#phone canvas#bgCanvas {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+#phone .container {
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+#phone .mainCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3vw;
+}
+
+#phone .title p {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 3.2rem;
+}
+
+#phone .title p:first-child {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+#phone .content p {
+  font-size: 1.5rem;
+  margin-top: 5vh;
+}
+
+#phone .content p:last-child {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 6vh;
+}
+
+
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1199.98px) { ... }
@@ -194,9 +299,4 @@ header nav.navbar a.nav-link.signUp {
   header nav.navbar a.nav-link.signUp {
     margin-left: 0;
   }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1600px;
 }
