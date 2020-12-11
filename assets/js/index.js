@@ -11,7 +11,7 @@
 // ---------------------------------animations banner----------------------------------
 
 $(document).ready(function(){
-  let owl = $('.owl-carousel')
+  let owl = $('.owl-carousel.owl-banner')
   owl.owlCarousel({
     loop: true,
     items:1,
@@ -71,7 +71,7 @@ for (var i = 0; i < x; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random() * 1 + 2,
+    radius: Math.random() * 1 + 8,
     vx: Math.floor(Math.random() * 50) - 25,
     vy: Math.floor(Math.random() * 50) - 25
   });
@@ -82,16 +82,15 @@ for (var i = 0; i < x; i++) {
 function draw() {
   ctx.clearRect(0,0,canvas.width,canvas.height);
 
-  ctx.globalCompositeOperation = "lighter";
+  // ctx.globalCompositeOperation = "lighter";
 
   for (var i = 0, x = stars.length; i < x; i++) {
     var s = stars[i];
 
-    ctx.fillStyle = "#fff";
+    ctx.fillStyle = "#f6804e";
     ctx.beginPath();
     ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
     ctx.fill();
-    ctx.fillStyle = 'black';
     ctx.stroke();
   }
 
@@ -108,8 +107,8 @@ function draw() {
       }
     }
   }
-  ctx.lineWidth = 0.15;
-  ctx.strokeStyle = 'white';
+  ctx.lineWidth = 1;
+  ctx.strokeStyle = '#f6804e';
   ctx.stroke();
 }
 
@@ -140,10 +139,12 @@ function update() {
   }
 }
 
-canvas.addEventListener('mousemove', function(e){
-  mouse.x = e.clientX;
-  mouse.y = e.clientY;
-});
+// seguir el mouse
+
+// canvas.addEventListener('mousemove', function(e){
+//   mouse.x = e.clientX;
+//   mouse.y = e.clientY;
+// });
 
 // Update and draw
 
@@ -154,6 +155,17 @@ function tick() {
 }
 
 tick();
+
+// -------------------------------Ingress-carousel------------------------------
+
+let owl = $('.owl-carousel.owl-ingress')
+owl.owlCarousel({
+  loop: true,
+  items:3,
+  margin:5,
+  // autoplay: true,
+  // autoplayTimeout: 4000,
+})
 
 // ------------------------------Amenities-Parallax-----------------------------
 
