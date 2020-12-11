@@ -16,6 +16,7 @@ $(document).ready(function(){
     loop: true,
     items:1,
     margin:0,
+    nav: false,
     // autoplay: true,
     // autoplayTimeout: 4000,
   })
@@ -48,6 +49,57 @@ function submited() {
       }, false)
     })
 }
+
+//--------------------------Launch-Carousel---------------------------
+
+function postsCarousel() {
+  var checkWidth = $(window).width();
+  var owlPost = $(".lauchContainer");
+
+  owlPost.each(function() {
+    if (checkWidth < 768) {
+      $(this).addClass('owl-carousel owl-theme')
+      $(this).owlCarousel({
+        items: 1,
+        dots: true,
+        nav: false
+      })
+    } else {
+
+      if (typeof $(this).data('owl.carousel') != 'undefined') {
+        $(this).data('owl.carousel').destroy();
+      }
+      $(this).removeClass('owl-carousel owl-theme')
+    }
+  })
+
+}
+postsCarousel()
+$(window).resize(postsCarousel)
+
+
+// -------------------------------Ingress-carousel------------------------------
+
+let owl = $('.owl-carousel.owl-ingress')
+owl.owlCarousel({
+  loop: true,
+  margin:5,
+  nav: false,
+  // autoplay: true,
+  // autoplayTimeout: 4000,
+  responsive:{
+    0:{
+        items:1,
+        nav:true
+    },
+    600:{
+        items:2,
+    },
+    1000:{
+        items:3,
+    }
+  }
+})
 
 // -----------------------------------Bg-Phone-------------------------------------
 
@@ -155,47 +207,4 @@ function tick() {
 }
 
 tick();
-
-// -------------------------------Ingress-carousel------------------------------
-
-let owl = $('.owl-carousel.owl-ingress')
-owl.owlCarousel({
-  loop: true,
-  items:3,
-  margin:5,
-  // autoplay: true,
-  // autoplayTimeout: 4000,
-})
-
-// ------------------------------Amenities-Parallax-----------------------------
-
-function amenities() {
-  let container = $("#amenities");
-  let heightTop = container.position().top;
-  let scroll = $(window).scrollTop();
-  let heightElem = container.height();
-  let suma = scroll - heightTop;
-  if (scroll > heightTop - heightElem && scroll < heightTop + heightElem) {
-    let el = $("#edfAmenities");
-    el.css({
-      transform: "translateY(calc(-30px + " + 0.15 * suma + "px))"
-    });
-  }
-  if (scroll > heightTop - heightElem && scroll < heightTop + heightElem) {
-    let el = $("#linea-turquesa");
-    el.css({
-      transform: "translateY(calc(-30px + " + 0.08 * suma + "px))"
-    });
-  }
-}
-
-// ---------------------------title-hidden--------------------------
-
-// determina si un elemento comienza a ser visible
-function isElementVisible(container) {
-  let viewScrollTop = $(window).scrollTop(); // distancia de scroll superior
-  let viewBottom = viewScrollTop + $(window).height(); // distancia de scroll + el alto actual de window (lo no visible por scroll + lo visible)
-  let topElemD = $(container).offset().top + 250; // distancia desde el elemento hasta el tope superior del viewport
-  return topElemD < viewBottom;
-}
 
