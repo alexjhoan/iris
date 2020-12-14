@@ -33,21 +33,45 @@ $(document).ready(function(){
 
 // -----------------------------------Form-------------------------------------
 
+
+function dataSubmited(data) {
+  const requestOptions = {
+    method: 'POST',
+    body: data,
+    headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+    },
+  };
+  fetch("https://jsonplaceholder.typicode.com/posts", requestOptions)
+  .then((response) => response.json())
+  .then((json) => {
+    console.log(json)
+    $('#formSignUp').hide();
+    $('#formSuccess').fadeIn();
+  })
+  .catch(error => {
+    console.log('error', error);
+    $('#formSignUp').hide();
+    $('#formError').fadeIn();
+  });
+}
+
 function submited() {
  'use strict'
-  const forms = document.querySelectorAll('.needs-validation')
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }else{
-          console.log('enviadooo')
-        }
-        form.classList.add('was-validated')
-      }, false)
-    })
+  const form = document.querySelector('#formSignUp')
+  const data = JSON.stringify({
+    name: form.name.value,
+    inmobiliaria: form.inmobiliaria.value,
+    city: form.city.value,
+    email: form.email.value
+  })
+  if (!form.checkValidity()) {
+    event.preventDefault()
+    event.stopPropagation()
+  }else{
+    dataSubmited(data)
+  }
+  form.classList.add('was-validated')
 }
 
 //--------------------------Launch-Carousel---------------------------

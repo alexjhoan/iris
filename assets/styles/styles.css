@@ -40,6 +40,7 @@ section {
 }
 
 .btn.btn-primary {
+  font-size: 28.8px;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -76,6 +77,7 @@ header img.logo {
 }
 
 header nav.navbar a.nav-link {
+  font-size: 27.2px;
   font-size: 1.7rem;
   color: var(--text-secondary) !important;
 }
@@ -96,9 +98,19 @@ section#banner {
 }
 
 #banner .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #banner .itemCarousel1 .textCarousel {
@@ -146,10 +158,23 @@ section#banner {
 }
 
 #banner .itemCarousel3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #banner .itemCarousel3 .textCarousel {
@@ -206,6 +231,7 @@ section#banner {
 #signUp form .title p {
   text-align: center;
   margin-bottom: 4vh;
+  font-size: 48px;
   font-size: 3rem;
 }
 
@@ -218,6 +244,7 @@ section#banner {
   padding-left: 45px;
   margin: 10px 0;
   border-radius: 10px;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
@@ -225,18 +252,59 @@ section#banner {
   position: absolute;
   max-height: 23px;
   height: auto;
-  transform: translate(12px, 23px);
+  -webkit-transform: translate(12px, 23px);
+          transform: translate(12px, 23px);
   max-width: 26px;
   width: auto;
 }
 
 #signUp img.iconInput.mail {
-  transform: translate(13px, 26px);
+  -webkit-transform: translate(13px, 26px);
+          transform: translate(13px, 26px);
 }
 
 #signUp .invalid-feedback {
-  transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
   margin: 0;
+}
+
+#signUp div#formSuccess, #signUp #formError {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 387px;
+}
+
+#signUp div#formSuccess img, #signUp #formError img {
+  width: 160px;
+  margin-right: 50px;
+}
+
+#signUp .infoSuccess p:first-child {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+#signUp .infoSuccess p:last-child {
+  font-size: 1.7rem;
+  max-width: 750px;
+  padding-left: 25px;
 }
 
 /*----------------------------Phone-------------------------------*/
@@ -262,16 +330,28 @@ section#banner {
 }
 
 #phone .mainCol {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 3vw 15px 3vw 3vw;
 }
 
 #phone .title p {
+  font-size: 48px;
   font-size: 3rem;
   font-weight: 800;
   margin: 0;
+  line-height: 51.2px;
   line-height: 3.2rem;
 }
 
@@ -281,11 +361,13 @@ section#banner {
 }
 
 #phone .content p {
+  font-size: 24px;
   font-size: 1.5rem;
   margin-top: 5vh;
 }
 
 #phone .content p:last-child {
+  font-size: 19.2px;
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 6vh;
@@ -299,6 +381,7 @@ section#ingress {
 
 section#ingress .title p.h1 {
   text-align: center;
+  font-size: 48px;
   font-size: 3rem;
   margin-bottom: 2vh;
 }
@@ -314,24 +397,32 @@ section#ingress .title p.h1 span img {
 
 #ingress .cardBox {
   margin: 10% 2%;
-  perspective: 800px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
 #ingress .cardBox:hover .cardCarousel {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 #ingress .cardCarousel {
   cursor: default;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.4s ease 0s;
+  transition: -webkit-transform 0.4s ease 0s;
   transition: transform 0.4s ease 0s;
+  transition: transform 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
   position: relative;
 }
 
 #ingress .cardCarousel .front,
 #ingress .cardCarousel .back {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   box-sizing: border-box;
   color: white;
   display: block;
@@ -342,17 +433,32 @@ section#ingress .title p.h1 span img {
 }
 
 #ingress .cardCarousel .back {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   position: absolute;
   top: 0;
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #ingress .cardCarousel .back .btn.btn-primary {
+  font-size: 19.2px;
   font-size: 1.2rem;
 }
 
@@ -363,17 +469,32 @@ section#ingress .title p.h1 span img {
 }
 
 #ingress .iconContainer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   margin: 5vh 0 8vh;
   grid-gap: 20px 30px;
 }
 
 #ingress .iconContainer .iconItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #ingress .iconContainer .iconItem img {
@@ -385,20 +506,46 @@ section#ingress .title p.h1 span img {
 #ingress .iconContainer .iconItem img.edf {
   max-width: 230px;
   min-height: 130px;
-  margin: 0 0 2vh;
+  margin: 0 0 5vh;
+}
+
+#ingress .infoItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 160px;
+  background: #fff;
+  padding: 2vh 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #ingress .iconContainer .iconItem p {
+  font-size: 27.2px;
   font-size: 1.7rem;
   font-weight: 700;
   text-align: center;
   margin: 3vh 0;
+  line-height: 32px;
   line-height: 2rem;
 }
 
 /*----------------------------Launch-------------------------------*/
 
 section#launch .title p {
+  font-size: 48px;
   font-size: 3rem;
   text-align: center;
   margin: 0;
@@ -406,12 +553,15 @@ section#launch .title p {
 
 section#launch .title p:last-child {
   font-weight: 900;
+  font-size: 56px;
   font-size: 3.5rem;
 }
 
 #launch .lauchContainer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 38% 58%;
+  -ms-grid-columns: 38% 58%;
+      grid-template-columns: 38% 58%;
   margin: 7vh 0;
   grid-column-gap: 4%;
 }
@@ -422,15 +572,30 @@ section#launch .title p:last-child {
 
 #launch .titleItem {
   background-color: var(--primary);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 96px;
   height: 6rem;
   margin-bottom: 60px;
 }
 
 #launch .titleItem p {
+  font-size: 40px;
   font-size: 2.5rem;
   margin: 0;
   color: #fff;
@@ -439,6 +604,7 @@ section#launch .title p:last-child {
 }
 
 #launch .titleItem p:last-child {
+  font-size: 20.8px;
   font-size: 1.3rem;
   margin-top: -7px;
 }
@@ -446,7 +612,8 @@ section#launch .title p:last-child {
 #launch .titleItem img {
   height: 120px;
   margin-right: 1vw;
-  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 #launch .subTitle, #launch .listItem, #launch .info{
@@ -460,20 +627,24 @@ section#launch .title p:last-child {
 #launch .subTitle p {
   text-align: center;
   color: var(--primary);
+  font-size: 25.6px;
   font-size: 1.6rem;
   font-weight: 900;
 }
 
 #launch .listItem p {
+  font-size: 22.4px;
   font-size: 1.4rem;
   position: relative;
   margin: 0;
   line-height: 1.2;
   color: var(--text);
+  padding-left: 32px;
   padding-left: 2rem;
 }
 
 #launch p.liItem img {
+  width: 20.8px;
   width: 1.3rem;
   position: absolute;
   top: 0;
@@ -485,6 +656,7 @@ section#launch .title p:last-child {
 }
 
 #launch .info p {
+  font-size: 25.6px;
   font-size: 1.6rem;
   font-weight: 900;
   text-align: center;
@@ -497,6 +669,7 @@ section#launch .title p:last-child {
 }
 
 #launch .launchFooter p {
+  font-size: 56px;
   font-size: 3.5rem;
   text-align: center;
   margin: 0;
@@ -523,58 +696,93 @@ section#benefits p.title {
   text-align: center;
   color: #fff;
   margin-bottom: 5vh;
+  font-size: 48px;
   font-size: 3rem;
   font-weight: 200;
 }
 
 #benefits .benefitsContainer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 #benefits .cardBox {
   margin: 10% 2%;
-  perspective: 800px;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
 #benefits .cardBox:hover .benefitsCard {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 #benefits .benefitsCard {
   cursor: default;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.4s ease 0s;
+  transition: -webkit-transform 0.4s ease 0s;
   transition: transform 0.4s ease 0s;
+  transition: transform 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
   position: relative;
 }
 
 #benefits .benefitsCard .front,
 #benefits .benefitsCard .back {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
 
 #benefits .benefitsCard .back {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   position: absolute;
   top: 0;
   background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #benefits .benefitsCard .front {
   background-color: #fff;
   position: relative;
   padding: 6vh 20px 6vh 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #benefits .benefitsCard .front img.icon {
@@ -583,13 +791,16 @@ section#benefits p.title {
 }
 
 #benefits .benefitsCard .front .info p {
+  font-size: 32px;
   font-size: 2rem;
   font-weight: 700;
+  line-height: 36.8px;
   line-height: 2.3rem;
   margin: 0;
 }
 
 #benefits .benefitsCard .front .info p:first-child {
+  font-size: 64px;
   font-size: 4rem;
   margin-bottom: 20px;
 }
@@ -603,7 +814,9 @@ section#benefits p.title {
 
 #benefits .benefitsCard .back p {
   width: 90%;
+  font-size: 27.2px;
   font-size: 1.7rem;
+  line-height: 32px;
   line-height: 2rem;
   font-weight: 500;
 }
@@ -623,8 +836,10 @@ section#information .title p:last-child {
 }
 
 #information .informationGrid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 65% 35%;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
 }
 
 #information .legendMap {
@@ -639,19 +854,23 @@ section#information .title p:last-child {
   background: var(--primary);
   color: #fff;
   padding: 10px 20px;
+  font-size: 40px;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
 #information .legendMap p.liItem {
   margin-bottom: 5px;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
 #information .legendMap p.liItem img {
+  width: 24px;
   width: 1.5rem;
   margin-right: 10px;
-  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 #information .informationFooter {
@@ -664,11 +883,13 @@ section#information .title p:last-child {
 
 #information .informationFooter p:first-child {
   color: var(--primary);
+  font-size: 80px;
   font-size: 5rem;
   font-weight: 900;
 }
 
 #information .informationFooter p:last-child {
+  font-size: 24px;
   font-size: 1.5rem;
   color: var(--text-secondary);
   margin-top: 30px;
@@ -683,15 +904,30 @@ footer {
 }
 
 footer .footerGrid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 footer .footerGrid div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footerGrid p {
@@ -700,7 +936,8 @@ footer .footerGrid p {
   font-size: 35px;
   font-weight: 200;
   margin-right: 20px;
-  transform: translateY(12px);
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 
 footer .footerGrid div:first-child img {
@@ -719,10 +956,15 @@ footer .footerGrid div:last-child img {
     font-size: 14px;
   }
   #signUp img.iconInput {
-    transform: translate(12px, 19px);
+    -webkit-transform: translate(12px, 19px);
+            transform: translate(12px, 19px);
   }
   #signUp img.iconInput.mail {
-    transform: translate(13px, 22px);
+    -webkit-transform: translate(13px, 22px);
+            transform: translate(13px, 22px);
+  }
+  #signUp div#formSuccess img, #signUp #formError img {
+    width: 120px;
   }
 }
 
@@ -731,24 +973,30 @@ footer .footerGrid div:last-child img {
     font-size: 12px;
   }
   #signUp img.iconInput {
-    transform: translate(12px, 17px);
+    -webkit-transform: translate(12px, 17px);
+            transform: translate(12px, 17px);
   }
   #signUp img.iconInput.mail {
-    transform: translate(13px, 19px);
+    -webkit-transform: translate(13px, 19px);
+            transform: translate(13px, 19px);
   }
   #information .legendMap p.titleList {
     padding: 5px 20px;
     font-size: 2rem;
   }
-  .legendMap .list:not(:first-child) {
+  #information .legendMap .list:not(:first-child) {
     margin-top: 33px;
+  }
+  #launch .titleItem p:last-child {
+    margin-top: -5px;
   }
   footer .footerGrid div:last-child img {
     height: 40px;
   }
   footer .footerGrid p {
     font-size: 30px;
-    transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
   }
 }
 
@@ -757,10 +1005,12 @@ footer .footerGrid div:last-child img {
     width: 150px;
   }
   #benefits .benefitsContainer {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   #information .informationGrid {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   footer .footerGrid div:first-child img {
     width: 150px;
@@ -768,7 +1018,8 @@ footer .footerGrid div:last-child img {
   footer .footerGrid p {
     font-size: 22px;
     margin-right: 10px;
-    transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
   footer .footerGrid div:last-child img {
     height: 33px;
@@ -788,17 +1039,43 @@ footer .footerGrid div:last-child img {
   }
   #signUp img.iconInput {
     max-height: 19px;
-    transform: translate(12px, 14px);
+    -webkit-transform: translate(12px, 14px);
+            transform: translate(12px, 14px);
     max-width: 21px;
   }
   #signUp img.iconInput.mail {
-  transform: translate(13px, 17px);
-}
+    -webkit-transform: translate(13px, 17px);
+            transform: translate(13px, 17px);
+  }
+  #signUp div#formSuccess, #signUp #formError {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+         -ms-flex-direction: column;
+             flex-direction: column;
+    min-height: 271px;
+  }
+  #signUp div#formSuccess img, #signUp #formError img {
+    width: 100px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  #signUp .infoSuccess p:first-child {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #signUp .infoSuccess p:last-child {
+    padding-left: 0;
+    text-align: center;
+  }
   #phone {
     padding: 8vh 8%;
   }
   #ingress .iconContainer {
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   #ingress .iconContainer .iconItem img {
     max-width: 140px;
@@ -809,7 +1086,8 @@ footer .footerGrid div:last-child img {
     min-height: 100px;
   }
   #launch .lauchContainer {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-column-gap: 0;
   }
   #launch .listItem p {
@@ -827,6 +1105,9 @@ footer .footerGrid div:last-child img {
   #launch .owl-carousel .owl-item img {
     width: auto;
   }
+  #launch .titleItem p:last-child {
+    margin-top: -3px;
+  }
   #information .legendMap p.liItem {
     font-size: 1.8rem;
   }
@@ -838,7 +1119,8 @@ footer .footerGrid div:last-child img {
   }
   footer .footerGrid p {
     font-size: 16px;
-    transform: translateY(7px);
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
   }
   footer .footerGrid div:last-child img {
     height: 25px;
@@ -869,7 +1151,8 @@ footer .footerGrid div:last-child img {
     width: 40px;
   }
   #ingress .iconContainer {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   #ingress .iconContainer .iconItem img.edf {
     max-width: 150px;
@@ -885,6 +1168,9 @@ footer .footerGrid div:last-child img {
   #launch .launchFooter p:last-child {
     letter-spacing: 0;
   }
+  #launch .titleItem p:last-child {
+    margin-top: 0px;
+  }
   #benefits .benefitsCard .front img.icon {
     height: 150px;
   }
@@ -896,7 +1182,8 @@ footer .footerGrid div:last-child img {
   }
   footer .footerGrid p {
     font-size: 10px;
-    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
     margin-right: 5px;
   }
   footer .footerGrid div:last-child img {

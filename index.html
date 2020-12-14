@@ -80,34 +80,34 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <form class="row needs-validation" action="javascript:void(0);" novalidate>
+          <form id="formSignUp" class="row needs-validation" action="javascript:void(0);" novalidate>
             <div class="col-12 title">
               <p class="h1">REGISTRATE Y <span>EMPEZÁ A VENDER</span></p>
             </div>
             <div class="col-12">
               <img src="assets/icons/user.png" alt="." class="iconInput">
-              <input type="text" class="form-control" placeholder="Nombre" required>
+              <input type="text" name="name" class="form-control" placeholder="Nombre" required>
               <div class="invalid-feedback">
                 Campo vacio
               </div>
             </div>
             <div class="col-md-6">
               <img src="assets/icons/home.png" alt="." class="iconInput">
-              <input type="text" class="form-control" placeholder="Inmobiliaria" required>
+              <input type="text" name="inmobiliaria" class="form-control" placeholder="Inmobiliaria" required>
               <div class="invalid-feedback">
                 Campo vacio
               </div>
             </div>
             <div class="col-md-6">
               <img src="assets/icons/map.png" alt="." class="iconInput">
-              <input type="text" class="form-control" placeholder="Ciudad" required>
+              <input type="text" name="city" class="form-control" placeholder="Ciudad" required>
               <div class="invalid-feedback">
                 Campo vacio
               </div>
             </div>
             <div class="col-12">
               <img src="assets/icons/mail.png" alt="." class="iconInput mail">
-              <input type="email" class="form-control" placeholder="Email" required>
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
               <div class="invalid-feedback">
                 Correo Incorrecto
               </div>
@@ -116,6 +116,24 @@
               <button class="btn btn-primary" type="submit" onclick="submited()">Registrarme</button>
             </div>
           </form>
+          <div id="formSuccess" style="display: none">
+            <div class="img">
+              <img src="assets/icons/form_ok.png" alt="">
+            </div>
+            <div class="infoSuccess">
+              <p>¡BIENVENIDO!</p>
+              <p>Hemos recibido tus datos vamos a verificar la información y nos contactamos contigo en breve para activar tu cuenta.</p>
+            </div>
+          </div>
+          <div id="formError" style="display: none">
+            <div class="img">
+              <img src="assets/icons/form_error.png" alt="">
+            </div>
+            <div class="infoSuccess">
+              <p>¡HA OCURRIDO UN ERROR!</p>
+              <p>Hemos tenido un problema al procesar en su solicitud, vuelva a intentarlo más tarde.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -290,27 +308,27 @@
           <div class="iconContainer">
             <div class="iconItem">
               <img src="assets/icons/icon_1.png" alt="" class="edf">
-              <p>+ 1.500 unidades en stock y + USD 3.000.000 en comisiones inmobiliarias.</p>
+              <div class="infoItem"><p>+ 1.500 unidades en stock y + USD 3.000.000 en comisiones inmobiliarias.</p></div>
             </div>
             <div class="iconItem">
               <img src="assets/icons/icon_2.png" alt="">
-              <p>Comisiones inmobiliarias establecidas y pagadas por los desarrolladores de forma clara y transparente.</p>
+              <div class="infoItem"><p>Comisiones inmobiliarias establecidas y pagadas por los desarrolladores de forma clara y transparente.</p></div>
             </div>
             <div class="iconItem">
               <img src="assets/icons/icon_3.png" alt="">
-              <p>Nuevos proyectos todas las semanas.</p>
+              <div class="infoItem"><p>Nuevos proyectos todas las semanas.</p></div>
             </div>
             <div class="iconItem">
               <img src="assets/icons/icon_4.png" alt="">
-              <p>Transparecia en la información que incentiva al cierre de negocios.</p>
+              <div class="infoItem"><p>Transparecia en la información que incentiva al cierre de negocios.</p></div>
             </div>
             <div class="iconItem">
               <img src="assets/icons/icon_5.png" alt="">
-              <p>Lanzamientos exclusivos y liquidación de unidades.</p>
+              <div class="infoItem"><p>Lanzamientos exclusivos y liquidación de unidades.</p></div>
             </div>
             <div class="iconItem">
               <img src="assets/icons/icon_6.png" alt="">
-              <p>Capacitaciones y talleres con los desarrolladores.</p>
+              <div class="infoItem"><p>Capacitaciones y talleres con los desarrolladores.</p></div>
             </div>
           </div>
         </div>
