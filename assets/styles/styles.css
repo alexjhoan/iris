@@ -789,7 +789,7 @@ section#benefits p.title {
 
 #benefits .benefitsCard .front .info p {
   font-size: 32px;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 36.8px;
   line-height: 2.3rem;
@@ -798,15 +798,15 @@ section#benefits p.title {
 
 #benefits .benefitsCard .front .info p:first-child {
   font-size: 64px;
-  font-size: 4rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 #benefits .benefitsCard .front .iconPlus {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  width: 60px;
+  width: 45px;
 }
 
 #benefits .benefitsCard .back p {
