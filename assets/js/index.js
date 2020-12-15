@@ -42,7 +42,7 @@ function dataSubmited(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
-  fetch("https://jsonplaceholder.typicode.com/posts", requestOptions)
+  fetch("https://prod.infocasas.com.uy/apps/iris/register.php", requestOptions)
   .then((response) => response.json())
   .then((json) => {
     console.log(json)
