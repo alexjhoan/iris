@@ -230,8 +230,6 @@ section#banner {
 #signUp form .title p {
   text-align: center;
   margin-bottom: 4vh;
-  font-size: 48px;
-  font-size: 3rem;
 }
 
 #signUp form .title p span {
@@ -347,7 +345,7 @@ section#banner {
 
 #phone .title p {
   font-size: 48px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   margin: 0;
   line-height: 51.2px;
@@ -380,8 +378,6 @@ section#ingress {
 
 section#ingress .title p.h1 {
   text-align: center;
-  font-size: 48px;
-  font-size: 3rem;
   margin-bottom: 2vh;
 }
 
@@ -497,14 +493,12 @@ section#ingress .title p.h1 span img {
 }
 
 #ingress .iconContainer .iconItem img {
-  max-width: 120px;
+  max-width: 90px;
   margin: 0;
-  max-height: auto;
 }
 
 #ingress .iconContainer .iconItem img.edf {
-  max-width: 155px;
-  max-height: auto;
+  max-width: 110px;
   margin: 0;
 }
 
@@ -547,7 +541,7 @@ section#ingress .title p.h1 span img {
 
 section#launch .title p {
   font-size: 48px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 0;
 }
@@ -555,7 +549,7 @@ section#launch .title p {
 section#launch .title p:last-child {
   font-weight: 900;
   font-size: 56px;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 #launch .lauchContainer {
@@ -817,10 +811,8 @@ section#benefits p.title {
 
 #benefits .benefitsCard .back p {
   width: 90%;
-  font-size: 27.2px;
-  font-size: 1.7rem;
-  line-height: 32px;
-  line-height: 2rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
   font-weight: 500;
 }
 
@@ -944,7 +936,7 @@ footer .footerGrid p {
 }
 
 footer .footerGrid div:first-child img {
-  width: 180px;
+  width: 150px;
 }
 
 footer .footerGrid div:last-child img {

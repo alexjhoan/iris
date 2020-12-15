@@ -1,13 +1,3 @@
-// ---------------------------------OwlCarousel----------------------------------
-
-// $('.owl-carousel').owlCarousel({
-//   loop: true,
-//   items:1,
-//   margin:0,
-//   // autoplay: true,
-//   // autoplayTimeout: 4000,
-// })
-
 // ---------------------------------animations banner----------------------------------
 
 $(document).ready(function(){
@@ -17,18 +7,16 @@ $(document).ready(function(){
     items:1,
     margin:0,
     nav: false,
-    // autoplay: true,
-    // autoplayTimeout: 4000,
+    autoplay: true,
+    autoplayTimeout: 4000,
   })
 
-  // owl.on("changed.owl.carousel", function(){
-  //   $('.textCarousel').not(".active").removeClass('animate__animated animate__fadeInUp')
-  //   // $('.textCarousel').not(".active").addClass('visually-hidden')
-  //   setTimeout(() => {
-  //     // $('.owl-item.active .textCarousel').removeClass('visually-hidden')
-  //     $('.owl-item.active .textCarousel').addClass('animate__animated animate__fadeInUp')
-  //   }, 10)
-  // })
+  owl.on("changed.owl.carousel", function(){
+    $('.textCarousel').not(".active").removeClass('animate__animated animate__fadeInUp').hide()
+    setTimeout(() => {
+      $('.owl-item.active .textCarousel').addClass('animate__animated animate__fadeInUp').show()
+    }, 350)
+  })
 })
 
 // -----------------------------------Form-------------------------------------
@@ -45,9 +33,12 @@ function dataSubmited(data) {
   fetch("https://prod.infocasas.com.uy/apps/iris/register.php", requestOptions)
   .then((response) => response.json())
   .then((json) => {
-    console.log(json)
+    if (json.status === "ok") {
+      $('#formSuccess').fadeIn();
+    } else {
+      $('#formError').fadeIn();
+    }
     $('#formSignUp').hide();
-    $('#formSuccess').fadeIn();
   })
   .catch(error => {
     console.log('error', error);
@@ -61,7 +52,7 @@ function submited() {
   const form = document.querySelector('#formSignUp')
   const data = JSON.stringify({
     name: form.name.value,
-    inmobiliaria: form.inmobiliaria.value,
+    realState: form.inmobiliaria.value,
     city: form.city.value,
     email: form.email.value
   })
