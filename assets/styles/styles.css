@@ -1090,9 +1090,6 @@ footer .footerGrid div:last-child img {
 }
 
 @media (max-width: 575.98px) {
-  :root {
-    font-size: 7px;
-  }
   header img.logo {
     width: 100px;
   }
