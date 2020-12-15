@@ -8,14 +8,15 @@ $(document).ready(function(){
     margin:0,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 5000,
+    smartSpeed: 600
   })
 
   owl.on("changed.owl.carousel", function(){
     $('.textCarousel').not(".active").removeClass('animate__animated animate__fadeInUp').hide()
     setTimeout(() => {
       $('.owl-item.active .textCarousel').addClass('animate__animated animate__fadeInUp').show()
-    }, 350)
+    }, 550)
   })
 })
 

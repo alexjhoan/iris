@@ -879,7 +879,7 @@ section#information .title p:last-child {
 #information .informationFooter p:first-child {
   color: var(--primary);
   font-size: 80px;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
 }
 
