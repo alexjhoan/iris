@@ -313,12 +313,12 @@ section#banner {
 }
 
 #signUp div#formSuccess img, #signUp #formError img {
-  width: 160px;
+  width: 100px;
   margin-right: 50px;
 }
 
 #signUp .infoSuccess p:first-child {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 900;
   margin-bottom: 0;
 }
@@ -326,7 +326,6 @@ section#banner {
 #signUp .infoSuccess p:last-child {
   font-size: 1.7rem;
   max-width: 750px;
-  padding-left: 25px;
 }
 
 /*----------------------------Phone-------------------------------*/
@@ -737,7 +736,7 @@ section#benefits p.title {
 }
 
 #benefits .cardBox {
-  margin: 10% 2%;
+  margin: 5%;
   -webkit-perspective: 800px;
           perspective: 800px;
   -webkit-transition: all 0.3s ease 0s;
@@ -982,15 +981,15 @@ footer .footerGrid div {
 footer .footerGrid p {
   margin: 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 200;
   margin-right: 15px;
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
 }
 
 footer .footerGrid div:first-child img {
-  width: 150px;
+  width: 120px;
 }
 
 footer .footerGrid div:last-child img {
@@ -1025,17 +1024,10 @@ footer .footerGrid div:last-child img {
   section#ingress .title p.h1 span img {
     width: 40px;
   }
-  footer .footerGrid div:first-child img {
-    width: 150px;
-  }
   footer .footerGrid p {
-    font-size: 22px;
     margin-right: 10px;
     -webkit-transform: translateY(6px);
             transform: translateY(6px);
-  }
-  footer .footerGrid div:last-child img {
-    height: 33px;
   }
 }
 
@@ -1122,16 +1114,9 @@ footer .footerGrid div:last-child img {
   #information .legendMap p.liItem img {
     width: 1.8rem;
   }
-  footer .footerGrid div:first-child img {
-    width: 120px;
-  }
   footer .footerGrid p {
-    font-size: 16px;
     -webkit-transform: translateY(7px);
             transform: translateY(7px);
-  }
-  footer .footerGrid div:last-child img {
-    height: 25px;
   }
 }
 
@@ -1175,14 +1160,14 @@ footer .footerGrid div:last-child img {
   footer .footerGrid div:first-child img {
     width: 80px;
   }
+  footer .footerGrid div:last-child img {
+  height: 15px;
+}
   footer .footerGrid p {
     font-size: 10px;
     -webkit-transform: translateY(3px);
             transform: translateY(3px);
     margin-right: 5px;
-  }
-  footer .footerGrid div:last-child img {
-    height: 15px;
   }
 }
 
