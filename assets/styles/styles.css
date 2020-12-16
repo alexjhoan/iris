@@ -335,7 +335,7 @@ section#banner {
   position: relative;
 }
 
-#phone canvas#bgCanvas {
+#phone .bgCanvas {
   position: absolute;
   width: 100%;
   top: 0;
