@@ -71,13 +71,12 @@ header .container {
 }
 
 header img.logo {
-  width: 180px;
+  width: 140px;
   margin: 5px 0;
 }
 
 header nav.navbar a.nav-link {
-  font-size: 27.2px;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: var(--text-secondary) !important;
 }
 
@@ -210,10 +209,13 @@ section#banner {
 #banner .owl-theme .owl-dots .owl-dot span {
   width: 2vw;
   height: 2vw;
-  max-width: 15px;
-  max-height: 15px;
-  margin: 5px 1vw;
+  max-width: 10px;
+  max-height: 10px;
   background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #ccc !important;
 }
 
 .owl-theme .owl-dots .owl-dot:focus {
@@ -234,7 +236,6 @@ section#banner {
 
 #signUp form .title p span {
   font-weight: 700;
-  color: var(--text);
 }
 
 #signUp input.form-control {
@@ -496,6 +497,12 @@ section#ingress .title p.h1 span img {
   grid-gap: 20px 30px;
 }
 
+#ingress .vendor p.title {
+  font-size: 2.1rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
 #ingress .iconContainer .iconItem {
   display: -webkit-box;
   display: -webkit-flex;
@@ -517,12 +524,12 @@ section#ingress .title p.h1 span img {
 }
 
 #ingress .iconContainer .iconItem img {
-  max-width: 90px;
+  max-width: 71px;
   margin: 0;
 }
 
 #ingress .iconContainer .iconItem img.edf {
-  max-width: 110px;
+  max-width: 91px;
   margin: 0;
 }
 
@@ -547,17 +554,17 @@ section#ingress .title p.h1 span img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-          margin-top: 30px;
+  margin-top: 30px;
+  width: 100%;
 }
 
 #ingress .iconContainer .iconItem p {
-  font-size: 27.2px;
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 500;
   text-align: center;
   margin: 3vh 0;
   line-height: 32px;
-  line-height: 2rem;
+  line-height: 1.8rem;
   max-width: 300px;
 }
 
@@ -828,9 +835,9 @@ section#benefits p.title {
 
 #benefits .benefitsCard .front .iconPlus {
   position: absolute;
-  bottom: 15px;
-  right: 15px;
-  width: 45px;
+  bottom: 7px;
+  right: 7px;
+  width: 33px;
 }
 
 #benefits .benefitsCard .back p {
@@ -1002,9 +1009,6 @@ footer .footerGrid div:last-child img {
   :root {
     font-size: 10px;
   }
-  header img.logo {
-    width: 150px;
-  }
   #benefits .benefitsContainer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1044,15 +1048,18 @@ footer .footerGrid div:last-child img {
     width: 2.5em;
     height: 2.5em;
   }
+  #signUp input.form-control {
+    padding-left: 35px;
+  }
   #signUp img.iconInput {
     max-height: 19px;
-    -webkit-transform: translate(12px, 14px);
-            transform: translate(12px, 14px);
+    -webkit-transform: translate(12px, 16px);
+            transform: translate(12px, 16px);
     max-width: 21px;
   }
   #signUp img.iconInput.mail {
-    -webkit-transform: translate(13px, 17px);
-            transform: translate(13px, 17px);
+    -webkit-transform: translate(13px, 18px);
+            transform: translate(13px, 18px);
   }
   #signUp div#formSuccess, #signUp #formError {
     -webkit-box-orient: vertical;
@@ -1083,14 +1090,6 @@ footer .footerGrid div:last-child img {
   #ingress .iconContainer {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-  }
-  #ingress .iconContainer .iconItem img {
-    max-width: 140px;
-    max-height: 90px;
-  }
-  #ingress .iconContainer .iconItem img.edf {
-    max-width: 200px;
-    min-height: 100px;
   }
   #launch .lauchContainer {
     -ms-grid-columns: 1fr;
@@ -1139,7 +1138,7 @@ footer .footerGrid div:last-child img {
     width: 100px;
   }
   header nav.navbar a.nav-link.signUp {
-    margin-left: 0;
+    margin-left: 15px;
   }
   #signUp form .title p {
     font-size: 2rem;
@@ -1156,14 +1155,6 @@ footer .footerGrid div:last-child img {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  #ingress .iconContainer .iconItem img.edf {
-    max-width: 150px;
-    min-height: 50px;
-  }
-  #ingress .iconContainer .iconItem img {
-    max-width: 100px;
-    max-height: 70px;
-  }
   #launch .launchFooter p {
     font-size: 3rem;
   }
@@ -1173,11 +1164,11 @@ footer .footerGrid div:last-child img {
   #launch .titleItem p:last-child {
     margin-top: 0px;
   }
+  #ingress .infoItem {
+    width: calc(100% - 50px);
+  }
   #benefits .benefitsCard .front img.icon {
     height: 150px;
-  }
-  #benefits .benefitsCard .front .iconPlus {
-    width: 40px;
   }
   footer .footerGrid div:first-child img {
     width: 80px;

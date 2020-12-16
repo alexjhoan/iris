@@ -79,6 +79,29 @@ function submited() {
   form.classList.add('was-validated')
 }
 
+//--------------------------hand-entry--------------------------------
+
+function hand() {
+  let container = $("#phone");
+  let heightTop = container.position().top;
+  let scroll = $(window).scrollTop();
+  let heightElem = container.height();
+  let suma = scroll - heightTop;
+  let item = $('.overflow-hidden img')
+  if (scroll > heightTop - heightElem) {
+    item.removeClass('visually-hidden');
+    item.addClass('animate__animated animate__fadeInRight');
+  }
+}
+
+
+ $(function () {
+  $(window).scroll(function (){
+    hand()
+  })
+})
+
+
 //--------------------------Launch-Carousel---------------------------
 
 function postsCarousel() {
@@ -152,7 +175,7 @@ for (var i = 0; i < x; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random() * 1 + 8,
+    radius: Math.random() * 1 + 3,
     vx: Math.floor(Math.random() * 50) - 25,
     vy: Math.floor(Math.random() * 50) - 25
   });
