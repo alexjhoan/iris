@@ -241,8 +241,32 @@ section#banner {
   padding-left: 45px;
   margin: 10px 0;
   border-radius: 10px;
-  font-size: 24px;
   font-size: 1.5rem;
+}
+
+#signUp .form-check label {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+#signUp .form-check .form-check-input {
+  float: left;
+  margin: 13px 15px 10px -1em;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.form-check-input:checked{
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem #f25d2840;
+}
+
+#signUp .form-check label a{
+  color: var(--primary);
 }
 
 #signUp img.iconInput {
@@ -888,6 +912,27 @@ section#information .title p:last-child {
   font-size: 1.5rem;
   color: var(--text-secondary);
   margin-top: 30px;
+}
+
+/*----------------------------Terminos-y-condiciones-------------------------------*/
+
+#politics p {
+  font-size: 11px;
+  text-align: justify;
+}
+
+#politics p.title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+#politics p a {
+  color: #0d6efd;
+}
+
+#politics p span.text-bold {
+  font-weight: 900;
 }
 
 /*----------------------------footer-------------------------------*/
