@@ -1,6 +1,11 @@
 // ---------------------------------animations banner----------------------------------
 
 $(document).ready(function(){
+
+  gtag('event', 'Landing - Cargar', {
+    'event_category': 'Iris - Landing - Cargar'
+  });
+
   let owl = $('.owl-carousel.owl-banner')
   owl.owlCarousel({
     loop: true,
@@ -31,6 +36,13 @@ function dataSubmited(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
+
+  const form = document.querySelector('#formSignUp')
+
+  gtag('event', form.email.value, {
+    'event_category': 'Iris - Landing - Enviar Formulario'
+  });
+
   fetch("https://prod.infocasas.com.uy/apps/iris/register.php", requestOptions)
   .then((response) => response.json())
   .then((json) => {
@@ -55,7 +67,8 @@ function submited() {
     name: form.name.value,
     realState: form.inmobiliaria.value,
     city: form.city.value,
-    email: form.email.value
+    email: form.email.value,
+    phone: form.phone.value
   })
   if (!form.checkValidity()) {
     event.preventDefault()
