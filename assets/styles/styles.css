@@ -415,7 +415,8 @@ section#ingress .title p.h1 span img {
 }
 
 section#ingress .owl-ingress .item div {
-  margin: 5px;
+  padding: 10px;
+  background: #fff;
 }
 
 section#ingress .owl-ingress .item p.title {
