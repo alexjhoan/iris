@@ -135,7 +135,7 @@ $(window).resize(postsCarousel)
 let owl = $('.owl-carousel.owl-ingress')
 owl.owlCarousel({
   loop: true,
-  margin:5,
+  margin:10,
   nav: false,
   // autoplay: true,
   // autoplayTimeout: 4000,

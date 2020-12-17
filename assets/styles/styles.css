@@ -414,78 +414,41 @@ section#ingress .title p.h1 span img {
   margin-left: 15px;
 }
 
-#ingress .cardBox {
-  margin: 10% 2%;
-  -webkit-perspective: 800px;
-          perspective: 800px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+section#ingress .owl-ingress .item div {
+  margin: 5px;
 }
 
-#ingress .cardBox:hover .cardCarousel {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+section#ingress .owl-ingress .item p.title {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 700;
 }
 
-#ingress .cardCarousel {
-  cursor: default;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 0.4s ease 0s;
-  transition: -webkit-transform 0.4s ease 0s;
-  transition: transform 0.4s ease 0s;
-  transition: transform 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
-  position: relative;
+section#ingress .owl-ingress .item p.price {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 500;
 }
 
-#ingress .cardCarousel .front,
-#ingress .cardCarousel .back {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  box-sizing: border-box;
-  color: white;
-  display: block;
-  font-size: 1.2em;
-  height: 100%;
-  text-align: center;
-  width: 100%;
-}
-
-#ingress .cardCarousel .back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  position: absolute;
-  top: 0;
-  background: #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+section#ingress .owl-ingress .item p.ubication {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
-#ingress .cardCarousel .back .btn.btn-primary {
-  font-size: 19.2px;
-  font-size: 1.2rem;
+section#ingress .owl-ingress .item p.ubication img {
+  width: auto;
+  margin: 0 3px;
+  height: 15px;
+  transform: translateY(3px);
 }
 
-#ingress .cardCarousel .back .btn.btn-primary:visited {
-  background-color: var(--btn) !important;
-  border-color: var(--btn) !important;
-  box-shadow: none !important;
+section#ingress .owl-ingress .item a {
+  font-size: 1rem;
+  padding: 2px 10px;
+  border-radius: 6px;
 }
+
 
 #ingress .iconContainer {
   display: -ms-grid;
