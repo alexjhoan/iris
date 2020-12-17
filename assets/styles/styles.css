@@ -414,6 +414,13 @@ section#ingress .title p.h1 span img {
   margin-left: 15px;
 }
 
+section#ingress .owl-ingress {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  width: 100%;
+}
+
 section#ingress .owl-ingress .item div {
   padding: 10px;
   background: #fff;
@@ -1063,7 +1070,7 @@ footer .footerGrid div:last-child img {
   #launch .subTitle p, #launch .info p {
     font-size: 1.8rem;
   }
-  #launch .owl-carousel .owl-item img {
+  #launch .owl-item img {
     width: auto;
   }
   #launch .titleItem p:last-child {
