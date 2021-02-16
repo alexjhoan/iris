@@ -49,6 +49,7 @@ section {
   border-radius: 10px;
   padding: 8px 24px;
   color: #fff;
+  position: relative;
 }
 
 .btn.btn-primary:hover,
@@ -892,6 +893,24 @@ section#information .title p:last-child {
   color: var(--text-secondary);
   margin-top: 30px;
 }
+a.btn.btn-primary.line:before {
+    content: "";
+    background-color: #21a2a8;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    margin-top: 110px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.users p {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
 
 /*----------------------------Terminos-y-condiciones-------------------------------*/
 
